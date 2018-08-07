@@ -4,7 +4,6 @@
   "description": "api.chaoticweg.cc",
   "main": "index.js",
   "scripts": {
-    "test": "bash test.sh"
   },
   "repository": {
     "type": "git",
@@ -18,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/ChaoticWeg/api.chaoticweg.cc/issues"
   },
-  "homepage": "https://github.com/ChaoticWeg/api.chaoticweg.cc#readme"
+  "homepage": "https://github.com/ChaoticWeg/api.chaoticweg.cc#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
