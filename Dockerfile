@@ -1,7 +1,7 @@
 FROM node:alpine
 
-EXPOSE 3000
-ENV PORT 3000
+EXPOSE 80
+ENV PORT 80
 
 WORKDIR /home/node/app
 COPY package*.json ./
