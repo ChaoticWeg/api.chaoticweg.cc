@@ -1,3 +1,7 @@
+*.swp
+
+## standard node ignores below
+
 # Logs
 logs
 *.log
