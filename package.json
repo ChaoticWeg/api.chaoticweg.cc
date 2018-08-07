@@ -4,7 +4,7 @@
   "description": "api.chaoticweg.cc",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/ChaoticWeg/api.chaoticweg.cc#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
     "express": "^4.16.3"
   }
 }
