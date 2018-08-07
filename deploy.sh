@@ -22,12 +22,11 @@ BUILD_OK=$?
 if [ $BUILD_OK -eq 0 ]; then
 
     echo -ne "OK\nstarting... "
-    docker run -d -it --rm --name $NAME $NAME >/dev/null # don't 2>&1
-    if [ $? -eq 0 ]; then
-        echo OK
-    fi
+    docker run -d -p 80:80 -it --rm --name $NAME $NAME >/dev/null # don't 2>&1
+    if [ $? -eq 0 ]; then echo OK; fi
 
 else
     echo NOT OK
     echo build exited with code $BUILD_OK
 fi
+
