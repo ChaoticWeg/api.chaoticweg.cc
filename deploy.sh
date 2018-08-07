@@ -1,6 +1,6 @@
 #!/bin/bash
 docker build -t api .
 if [ $? -eq 0 ]; then
-    docker run -it --rm --name api.chaoticweg.cc api
+    docker run -d -it --rm --name api.chaoticweg.cc api
 fi
 
