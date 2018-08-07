@@ -4,6 +4,7 @@
   "description": "api.chaoticweg.cc",
   "main": "index.js",
   "scripts": {
+    "test": "node index.js"
   },
   "repository": {
     "type": "git",
