@@ -1,0 +1,22 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "api.chaoticweg.cc",
+  "main": "index.js",
+  "scripts": {
+    "test": "bash test.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChaoticWeg/api.chaoticweg.cc.git"
+  },
+  "keywords": [
+    "no"
+  ],
+  "author": "ChaoticWeg",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ChaoticWeg/api.chaoticweg.cc/issues"
+  },
+  "homepage": "https://github.com/ChaoticWeg/api.chaoticweg.cc#readme"
+}
