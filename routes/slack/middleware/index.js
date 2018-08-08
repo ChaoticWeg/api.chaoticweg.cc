@@ -2,18 +2,15 @@ var exports = module.exports = {};
 
 exports.validateToken = (req, res, next) => {
     if (!process.env.SLACK_TOKEN) {
-        res.status(500);
-        return next("Unknown token");
+        return res.sendStatus(500);
     }
 
     if (!req.body || !req.body.token) {
-        res.status(400);
-        return next("Missing token");
+        return res.sendStatus(400);
     }
 
     if (req.body.token !== process.env.SLACK_TOKEN) {
-        res.status(401);
-        return next("Bad token");
+        return res.sendStatus(401);
     }
 
     // ok, maybe
