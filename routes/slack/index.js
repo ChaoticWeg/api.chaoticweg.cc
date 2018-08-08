@@ -7,7 +7,7 @@ var slackApp = express();
 slackApp.use(bParser.urlencoded({ extended: false }));
 slackApp.use(middles.validateToken);
 
-slackApp.post('/weg', (req, res) => {
+slackApp.post('/test', (req, res) => {
     res.sendStatus(200);
 });
 
