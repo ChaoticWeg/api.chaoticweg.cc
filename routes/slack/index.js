@@ -8,7 +8,7 @@ var slackApp = express();
 slackApp.use(bParser.urlencoded({ extended: false }));
 slackApp.use(middles.validateToken);
 
-slackApp.post('/test', commands.test);
-slackApp.post('/roll', commands.roll);
+slackApp.post('/test', commands.load('test'));
+slackApp.post('/roll', commands.load('roll'));
 
 module.exports = slackApp;
