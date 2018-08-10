@@ -4,7 +4,7 @@ NAME         =  api
 PORTS        =  80:80
 
 BUILD_FLAGS  =  -t $(NAME)
-DEPLOY_FLAGS =  -d -p $(PORTS) -it --name $(NAME) 
+DEPLOY_FLAGS =  -d -p $(PORTS) -it --rm --name $(NAME) 
 
 all:
 	make stop
