@@ -7,7 +7,7 @@ BUILD_FLAGS  =  -t $(NAME)
 DEPLOY_FLAGS =  -d -p $(PORTS) -it --rm --name $(NAME) 
 
 all:
-	make stop
+	make -i stop
 	make build
 	make deploy
 
