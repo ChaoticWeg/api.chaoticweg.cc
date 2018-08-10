@@ -8,7 +8,12 @@ var slackApp = express();
 slackApp.use(bParser.urlencoded({ extended: false }));
 slackApp.use(middles.validateToken);
 
-slackApp.post('/test', commands.load('test'));
-slackApp.post('/roll', commands.load('roll'));
+// load all commands
+var cmds = commands.names();
+for (var i = 0; i < cmds.length; i++) {
+    let appPath = cmds[i].replace('.js', '');
+    console.log('loading slack command: /' + appPath + ' --> ' + cmds[i]);
+    slackApp.post('/' + appPath, commands.load(cmds[i]));
+}
 
 module.exports = slackApp;
